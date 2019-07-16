@@ -15,7 +15,16 @@ var guess = prompt("Какое число я загадал?");
 var numberGuesses = 1;
 
 while (guess != number) {
-  /*if (guess === (null) || ('' || ' ')) { //GOVNOKOD!!!
+  /*
+  if (guess === null) {
+    guess = prompt("Нужно ввести число от 1 до 100.");
+  }
+
+  if (guess === '') {
+    guess = prompt("Нужно ввести число от 1 до 100.");
+  }
+
+  if (guess === ' ') {
     guess = prompt("Нужно ввести число от 1 до 100.");
   }
   */
