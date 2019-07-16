@@ -4,7 +4,7 @@ while (name == '' || name == null) {
   name = prompt('Привет!\nКак тебя зовут?');
 }
 
-alert(name + ', давай поиграем в игру!\nЯ загадаю число от 1 до 100, а ты попробуй его отгадать за наименьшее количество попыток.\n\nПосле каждой попытки я скажу - "Мало", "Много" или "Угадал"!');
+alert(name + ', давай поиграем в игру!\n\nЯ загадаю число от 1 до 100, а ты попробуй его отгадать за наименьшее количество попыток.\n\nПосле каждой попытки я скажу - "Мало", "Много" или "Угадал"!');
 
 function random(numberOf) {
   return Math.ceil(Math.random() * numberOf);
@@ -20,15 +20,15 @@ while (guess != number) {
   }
   */
   if (guess > number) {
-    guess = prompt("Много.\nПопробуй ещё раз!");
+    guess = prompt(guess + " - это много.\nПопробуй ещё раз!");
     numberGuesses = numberGuesses + 1;
   }
 
   if (guess < number) {
-    guess = prompt("Мало.\nПопробуй ещё раз!");
+    guess = prompt(guess + " - мало.\nПопробуй ещё раз!");
     numberGuesses = numberGuesses + 1;
   }
 
 }
 
-alert(name + ", ты угадал!\nЭто число \"" + number + "\"" + ".\nКоличество использованых попыток - \"" + numberGuesses + "\"");
+alert(name + ", ты угадал!\n\nЭто число \"" + number + "\"" + ".\n\nКоличество использованых попыток - \"" + numberGuesses + "\"");
